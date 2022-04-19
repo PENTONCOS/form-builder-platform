@@ -1,0 +1,61 @@
+{
+	"name": "form-builder-platform",
+	"version": "1.0.0",
+	"private": true,
+	"description": "",
+	"appName": "micro",
+	"homePage": "/micro/",
+	"homePath": "/application/micro/",
+	"main": "index.js",
+	"scripts": {
+		"start": "fle start",
+		"preview": "fle preview",
+		"build": "fle build"
+	},
+	"keywords": [],
+	"sideEffects": [
+		"**/*.css",
+		"**/*.less",
+		"sentry.ts"
+	],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@fle-cli/react-script": "2.0.7-alpha.0",
+		"@types/js-cookie": "^2.2.6",
+		"@types/react": "17.0.6",
+		"@types/react-dom": "17.0.5",
+		"@types/react-router-dom": "^5.1.7"
+	},
+	"dependencies": {
+		"@fle-ui/next": "^1.0.2",
+		"@fle-ui/pro-layout": "1.1.71",
+		"@fle-ui/pro-router": "1.14.73",
+		"@ice/stark-app": "^1.4.2",
+		"axios": "^0.21.1",
+		"classnames": "^2.3.1",
+		"js-cookie": "^2.2.1",
+		"mobx": "^6.3.2",
+		"mobx-react": "^7.2.0",
+		"moment": "^2.29.1",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-router-dom": "^5.2.0"
+	},
+	"resolutions": {
+		"@types/react": "17.0.6",
+		"@types/react-dom": "17.0.5"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}

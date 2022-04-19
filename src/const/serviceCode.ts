@@ -1,0 +1,7 @@
+export default new Map([
+  ["SUCCESS", "2000"],
+  ["QUERY_PARAMS_ERROR", "4000"],
+  ["LOGIN_ERROR", "100003"],
+  ["OTHER_ERROR", "5000"],
+  ["GOODS_CHANGE_PERMIT_BY_ACTIVITY", "50000407"],
+]);
