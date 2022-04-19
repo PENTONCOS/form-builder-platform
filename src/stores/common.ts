@@ -1,8 +1,6 @@
 import { makeAutoObservable } from 'mobx';
-import $http from '@/tools/service';
+import { request } from '@fle-tools/request';
 import commonApi from '@/api/common';
-import { Modal } from '@fle-ui/next';
-
 
 import type { StateProps } from '@/types/common/store';
 
@@ -20,34 +18,12 @@ class CommonStore {
     }
   };
 
-  loginConfirmIndex: number = 0;
-
-  // 去登录
-  goLogin = () => {
-
-    if (this.loginConfirmIndex > 0) {
-      return;
-    }
-    Modal.confirm({
-      title: "登陆已失效，点击确定跳转登录",
-      icon: null,
-      okCancel: false,
-      okText: "确定",
-      onOk: () => {
-        // window.location.href = ``;
-        this.loginConfirmIndex = 0;
-      },
-      zIndex: 999999
-    });
-    this.loginConfirmIndex = this.loginConfirmIndex + 1;
-  }
-
   memberInfo = {};
 
   getMemberInfo = async (params: any = {}) => {
     try {
-      const data = await $http.get(commonApi.memberInfo, { params });
-      console.log(params);
+      const { data } = await request.get(commonApi.memberInfo, { params });
+      console.log(data);
     } catch (ex) {
       console.warn(ex);
     }

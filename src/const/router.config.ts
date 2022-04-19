@@ -6,13 +6,13 @@ export default [
         title: '首页',
         path: '/home',
         exact: true,
-        component: import('@/pages/home'),
+        component: import( /* webpackChunkName: "p-home" */ '@/pages/home'),
         routers: [
           {
             title: '详情',
             path: '/details',
             exact: true,
-            component: import('@/pages/details'),
+            component: import(/* webpackChunkName: "p-details" */'@/pages/details'),
           }
         ]
       },
@@ -20,7 +20,7 @@ export default [
         title: '演示列表',
         path: '/list',
         exact: true,
-        component: import('@/pages/list'),
+        component: import(/* webpackChunkName: "p-list" */'@/pages/list'),
       }
     ]
   },

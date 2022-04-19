@@ -7,9 +7,12 @@
       "DOM.Iterable",
       "ESNext"
     ],
-    "allowJs": false,
-    "skipLibCheck": false,
-    "esModuleInterop": false,
+    "types": [
+      "vite/client"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -30,6 +33,18 @@
     "transformMixedEsModules": true,
   },
   "include": [
-    "./src"
+    "src/**/*",
+    "typings.d.ts"
   ],
+  "exclude": [
+    "node_modules",
+    "lib",
+    "es",
+    "dist",
+    "typings",
+    "**/__test__",
+    "test",
+    "docs",
+    "tests"
+  ]
 }

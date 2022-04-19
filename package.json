@@ -3,9 +3,6 @@
 	"version": "1.0.0",
 	"private": true,
 	"description": "",
-	"appName": "micro",
-	"homePage": "/micro/",
-	"homePath": "/application/micro/",
 	"main": "index.js",
 	"scripts": {
 		"start": "fle start",
@@ -21,7 +18,7 @@
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"@fle-cli/react-script": "2.0.7-alpha.0",
+		"@fle-cli/react-script": "2.0.12-alpha.2",
 		"@types/js-cookie": "^2.2.6",
 		"@types/react": "17.0.6",
 		"@types/react-dom": "17.0.5",
@@ -29,9 +26,11 @@
 	},
 	"dependencies": {
 		"@fle-ui/next": "^1.0.2",
+		"@fle-ui/pro-error-boundary": "^1.3.9",
 		"@fle-ui/pro-layout": "1.1.71",
 		"@fle-ui/pro-router": "1.14.73",
-		"@ice/stark-app": "^1.4.2",
+		"@fle-ui/pro-table": "^1.0.15",
+		"@ice/stark": "^2.7.3",
 		"axios": "^0.21.1",
 		"classnames": "^2.3.1",
 		"js-cookie": "^2.2.1",

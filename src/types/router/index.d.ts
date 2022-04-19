@@ -7,7 +7,7 @@ export interface RouterConfigInterface {
   layout?: string; 
   redirect?: string;
   exact?: boolean;
-  routers?: RouterConfig[]
+  routers?: any
   loading?: LoadingForm;
 }
 
@@ -18,15 +18,15 @@ export interface RouterConfigItemInterface {
   layout?: any; 
   redirect?: string;
   exact?: boolean;
-  routers?: RouterConfig[]
+  routers?: any[]
   loading?: LoadingForm;
 }
 
 export interface RouterParams extends RouterConfigItemInterface {
-  render?: (props: RouteComponentProps<Params>) => React.ReactNode;
+  render?: (props: RouteComponentProps<any>) => React.ReactNode;
 }
 
 
 
 export type RouterForm = RouterConfigInterface[];
-export type LoadingForm = ComponentType<LoadingComponentProps>;
+export type LoadingForm = ComponentType<any>;
